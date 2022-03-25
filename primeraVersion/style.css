@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+header nav{
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.links{
+    font-family: Arial, sans-serif;
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+}
+.header-images{
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.app-image{
+    background-image: url("./pics/apps.png");
+}
+.user-image{
+    background-image: url("./pics/user.png");
+}
+main{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    width: 285px;
+    height: 100px;
+}
+.main-images{
+    width: 20px;
+    height: 20px;
+    margin: 7px;
+}
+.search-section{
+    width: 450px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 20px 0;
+    border: 1px gray solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-image{
+    order: 1;
+}
+.micro-image{
+    background-image: url("./pics/microphone.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    order: 3; 
+}
+input{
+    width: 380px;
+    height: 30px;
+    border: none;
+    outline: none;
+    order: 2;
+}
+.main-button{
+    width: 150px;
+    height: 35px;
+    margin: 0px 10px;
+}
+footer{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    display: inline;
+    margin: 5px;
+}
