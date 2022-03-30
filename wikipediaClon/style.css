@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: aquamarine;
+    width: 100%;
+    height: 620px
+}
+main .title-content{
+    background-color: blue;
+    width: 100%;
+    height: 100px
+}
+main .main-content{
+    background-color: yellow;
+    width: 100%;
+    height: 390px
+}
+main .search-content{
+    background-color: red;
+    width: 100%;
+    height: 130px
+}
+footer{
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+footer .download-content{
+    background-color: green;
+    width: 30%;
+    height: 480px;
+}
+footer .options-content{
+    background-color: goldenrod;
+    width: 70%;
+    height: 480px;
+}
