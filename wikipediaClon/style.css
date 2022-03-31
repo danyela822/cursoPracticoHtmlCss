@@ -171,14 +171,30 @@ footer{
 .bottom-box{
     border: 1px solid black;
     display: flex;
+    text-decoration: none;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
 }
 .bottom-box__icon{
     width: 30%;
     border: 1px solid black;
 }
+.bottom-box__icon img{
+    width: 75%;
+}
 .bottom-box__text{
     width: 70%;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bottom-box__title{
+    font-size: 1.4rem;
+    color: #36c;
+}
+.bottom-box__paragraph{
+    font-size: 1.3rem;
+    color: #54595d
 }
 .bottom-container{
     width: 100%;
