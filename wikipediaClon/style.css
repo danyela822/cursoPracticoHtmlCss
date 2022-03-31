@@ -3,39 +3,185 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+}
 main{
-    background-color: aquamarine;
+    background-color: bisque;
     width: 100%;
-    height: 620px
+    height: 620px;
 }
-main .title-content{
-    background-color: blue;
+.title-container{
+    border: 1px solid black;
     width: 100%;
-    height: 100px
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
 }
-main .main-content{
-    background-color: yellow;
-    width: 100%;
-    height: 390px
+.title-container__icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Wikipedia_wordmark.svg/1280px-Wikipedia_wordmark.svg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 176px;
+    height: 32px;
 }
-main .search-content{
+.title-container__slogan{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+.title-container__img{
+    width: 200px;
+    position: absolute;
+    bottom: -285px;
+}
+.main-container{
+    min-width: 485px;
+    max-width: 580px;
+    height: 340px;
+    margin: 0px auto;
+}
+.boxes-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.boxes-container__box{
+    border: 1px solid black;
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+.boxes-container__box--center{
+    justify-content: center;
+}
+.boxes-container__box--left{
+    padding-left: 50px;
+}
+.boxes-container__box--right{
+    justify-content: end;
+    padding-right: 50px;
+}
+.boxes-container__box--end{
+    justify-content: end;
+}
+.search-container{
     background-color: red;
     width: 100%;
-    height: 130px
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-container__input{
+    width: 395px;
+    height: 44px;
+    border: 1px solid black;
+}
+.search-container__input input{
+    width: 95%;
+    height: 40px;
+    margin: 0.5px auto;
+}
+.search-container__lang{
+    width: 42px;
+    height: 42px;
+}
+.search-container__icon{
+    width: 40px;
+    height: 40px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;    
+}
+.lang-container{
+    background-color: blue;
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lang-container button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lang-container__lang-icon{
+    background-image: url("https://symbols.getvecta.com/stencil_4/51_google-cloud-translation.b123b7120f.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;    
+    width: 25px;
+    height: 25px;
+    /* padding: 0 2px; */
+    margin: 5px 10px;
+}
+.lang-container__text{
+    font-size: 1.4rem;
+    padding: 0 5px;
+}
+.lang-container__arrow-icon{
+    background-image: url("https://cdn3.iconfinder.com/data/icons/arrows-149/512/directional-chevron-down-512.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;    
+    width: 25px;
+    height: 25px;
+    /* padding: 0 2px; */
+    margin: 5px 10px;
 }
 footer{
     background-color: rebeccapurple;
     width: 100%;
     height: 500px;
+}
+.top-container{
+    width: 100%;
+    height: 450px;
     display: flex;
 }
-footer .download-content{
+.left-container{
     background-color: green;
-    width: 30%;
-    height: 480px;
+    width: 32%;
+    height: 450px;
+
 }
-footer .options-content{
+.foundation-container{
+    width: 100%;
+    height: 50%;
+}
+.downloads-container{
+    width: 100%;
+    height: 50%;
+}
+.right-container{
     background-color: goldenrod;
+    width: 68%;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.bottom-box{
+    border: 1px solid black;
+    display: flex;
+}
+.bottom-box__icon{
+    width: 30%;
+    border: 1px solid black;
+}
+.bottom-box__text{
     width: 70%;
-    height: 480px;
+    border: 1px solid black;
+}
+.bottom-container{
+    width: 100%;
+    border: 1px solid black;
+    height: auto;
 }
