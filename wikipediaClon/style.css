@@ -137,7 +137,6 @@ main{
     margin: 5px 10px;
 }
 footer{
-    background-color: rebeccapurple;
     width: 100%;
     height: 500px;
 }
@@ -147,18 +146,52 @@ footer{
     display: flex;
 }
 .left-container{
-    background-color: green;
     width: 32%;
     height: 450px;
 
 }
 .foundation-container{
     width: 100%;
-    height: 50%;
+    height: 40%;
+    padding: 0 50px;
 }
 .downloads-container{
     width: 100%;
-    height: 50%;
+    height: 60%;
+    padding-left: 50px;
+}
+.foundation-container__paragraph{
+
+}
+.foundation-container__link{
+
+}
+.downloads-container__text{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+    font-size: 1.3rem;
+}
+.downloads-container__title{
+    font-size: 1.4rem;
+    color: #54595d;
+}
+.downloads-container__paragraph{
+    font-size: inherit;
+    color:  #54595d;
+}
+.downloads-container__text img{
+    width: 30px;
+    height: 30px;
+}
+.downloads-container__stores-icons{
+    margin: 0 auto;
+}
+.downloads-container__stores-icons .google-play{
+    width: 124px;
+    height: 38px;
+}
+.downloads-container__stores-icons .app-store{
+    width: 110px;
+    height: 38px;
 }
 .right-container{
     background-color: goldenrod;
@@ -179,7 +212,7 @@ footer{
     border: 1px solid black;
 }
 .bottom-box__icon img{
-    width: 75%;
+    width: 40%;
 }
 .bottom-box__text{
     width: 70%;
