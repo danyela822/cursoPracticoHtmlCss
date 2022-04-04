@@ -160,11 +160,23 @@ footer{
     height: 60%;
     padding-left: 50px;
 }
-.foundation-container__paragraph{
+.foundation-container__icon{
 
 }
+.foundation-icon{
+    width: 30px;
+    height: 30px;
+}
+.foundation-container__text{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+    font-size: 1.3rem;
+}
 .foundation-container__link{
-
+    text-decoration: none;
+}
+.foundation-container__paragraph{
+    font-size: inherit;
+    color:  #54595d;
 }
 .downloads-container__text{
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
