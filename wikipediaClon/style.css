@@ -1,3 +1,10 @@
+:root{
+    --primary-color:#36c;
+    --secondary-color: #54595d;
+    --primary-size: 1.6rem;
+    --secondary-size: 1.4rem;
+    --font: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +18,6 @@ main{
     height: 620px;
 }
 .title-container{
-    border: 1px solid black;
     width: 100%;
     height: 110px;
     display: flex;
@@ -36,11 +42,11 @@ main{
 .title-container__img{
     width: 200px;
     position: absolute;
-    bottom: -285px;
+    bottom: -255px;
 }
 .main-container{
     min-width: 485px;
-    max-width: 580px;
+    max-width: 525px;
     height: 340px;
     margin: 0px auto;
 }
@@ -50,23 +56,51 @@ main{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 .boxes-container__box{
-    border: 1px solid black;
     height: 65px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-}
-.boxes-container__box--center{
     justify-content: center;
 }
+.boxes-container__box a{
+    text-decoration: none;
+}
+.boxes-container__box a:hover{
+    background-color:#eaecf0;
+    text-decoration: none;
+}
+.boxes-container__box strong{
+
+    font-size: var(--primary-size);
+    font-family: var(--font);
+    color: var(--primary-color);
+    display: block;
+}
+.boxes-container__box small{
+    font-size: var(--secondary-size);
+    font-family: var(--font);
+    color: var(--secondary-color);
+    display: inline-block;
+}
+.boxes-container__box--left_center{
+    align-items: flex-start;
+    padding-left: 35px;
+}
 .boxes-container__box--left{
+    padding-right: 85px;
+}
+.boxes-container__box--left-1{
+    padding-right: 50px;
+}
+.boxes-container__box--right-1{
     padding-left: 50px;
 }
 .boxes-container__box--right{
-    justify-content: end;
-    padding-right: 50px;
+    padding-left: 85px;
 }
-.boxes-container__box--end{
-    justify-content: end;
+.boxes-container__box--right-center{
+    align-items: flex-end;
+    padding-right: 35px;
 }
 .search-container{
     border: 1px solid black;
@@ -176,6 +210,7 @@ footer{
     text-decoration: none;
     padding-left: 10px;
     display: inline-block;
+    color: var(--primary-color);
 }
 .foundation-container__paragraph{
     font-size: inherit;
@@ -225,10 +260,13 @@ footer{
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 .bottom-box{
-    border: 1px solid black;
     display: flex;
     text-decoration: none;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+    margin: 10px 0px;
+}
+.bottom-box:hover{
+    background-color: #eaecf0;
 }
 .bottom-box__icon{
     width: 20%;
